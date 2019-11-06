@@ -1,0 +1,51 @@
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  height: 300px;
+  background-color: black;
+  .circle {
+    border-radius: 50%;
+    background-color: transparent;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  .circle1 {
+    width: 350px;
+    height: 250px;
+    flex-direction: column;
+    border-top: 2px solid #f5efe3;
+    border-bottom: 2px solid #f5efe3;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    border-radius: 50%;
+  }
+  50% {
+    border-radius: 0%;
+  }
+}
+
+p {
+  animation-name: exit;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  color: #f5efe3;
+}
+
+@keyframes exit {
+  0% {
+    color: transparent;
+    font-size: 20px;
+  }
+  50% {
+    color: #f5efe3;
+    font-size: 30px;
+  }
+}
